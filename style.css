@@ -1,0 +1,198 @@
+     <style>
+     body {
+         font-family:serif, sans-serif;
+     }
+   /* Responsive Header Style */   
+.header {
+  overflow: hidden;
+  background-color: #555;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 46px;
+  border-radius: 5px;
+}
+
+.header a.site-name {
+  font-size: 35px;
+  font-weight: bold;
+}
+.header a.site-name:hover {
+ -webkit-text-fill-color:transparent;
+ -webkit-text-stroke:2px #ffcc00;
+}
+
+.header-right a:hover {
+  background-color: lightblue;
+  color: black;
+}
+ .header-right a {
+     color:rgb(0, 231, 247);
+ }
+
+.header-right {
+  float: right;
+}
+
+  .header a {
+    float: none;
+    display: overflow;
+    text-align: left;
+  }
+/* Akhir Responsive Header Style */
+ 
+     /* hover sidebar navigation */
+   #mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  margin-top:5rem;
+}
+ .sidenav {
+    background:url(https://images.unsplash.com/photo-1575330719343-23de81f5b995?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=767&q=80);
+    background-size:cover;
+    padding:135px;
+ }
+#mySidenav a:hover {
+  left: 0;
+}
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+#article {
+  top: 140px;
+  background-color: #f44336;
+}
+#contact {
+  top: 200px;
+  background-color: #555;
+}
+/* akhir hover sidebar navigation */
+
+ h1 {
+     border-bottom:1px solid;
+ }
+ h1, p {
+     text-align:center;
+ }
+
+ /* Article Card Style */
+.cards {
+    display: flex;
+    justify-content:center;
+    /* Put a card in the next row when previous cards take all width */
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.cards-item {
+    /* There will be 4 cards per row */
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    flex-basis: 25%;
+    padding:5px;
+    border:2px solid;
+    border-radius:5px;
+    text-align:center;
+    margin:10px;
+    cursor:pointer;
+}
+.cards-item:hover {
+   box-shadow: 0 8px 20px 0 black;
+}
+ /* Akhir Article Card Style */
+
+/* contact section */
+.container {
+  width:800px;
+  height:620px;
+  margin:30px auto;
+  border:none;
+  box-sizing:border-box;
+  padding:0;
+  display:grid;
+  grid-template-areas:"image contact"
+                      "image contact";
+  grid-template-columns:2fr 2fr;
+  grid-template-rows:4fr 4fr;
+}
+.image {
+  grid-area:image;
+  width:100%;
+  height:500px;
+  padding:40px 0;
+  box-sizing:border-box;
+  flex:1.5;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.card {
+  grid-area:contact;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  box-sizing:border-box;
+  justify-content:center;
+  align-items:center;
+}
+h2 {
+  grid-area:contact;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, .card a:hover {
+  opacity: 0.7;
+}
+/* akhur contact section */
+footer {
+  text-align:center;
+  background-color:lightgrey;
+  padding:20px;
+}
+
+
+     </style>
